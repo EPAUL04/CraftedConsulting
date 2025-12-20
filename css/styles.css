@@ -1,0 +1,90 @@
+:root {
+  --image_height: 200px;
+}
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    position: sticky;
+    top: 0;
+    height: calc(var(--image_height) - 2px);
+    width: 100%;
+    background-color: white;
+    z-index: 0;
+    box-shadow: 8px 5px 5px grey;
+}
+
+header {
+    float: left;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#logo {
+    background-color: black;
+    height: var(--image_height);
+}
+
+nav {
+    float: right;
+    margin: 1%;
+    padding: 1%;
+    position: sticky;
+    top: 25px;
+    z-index: 1;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 15px 25px 15px 25px;
+    color: darkgreen;
+    border-radius: 15px;
+}
+nav ul li a:hover {
+    color: goldenrod;
+    transition: 0.5s ease;
+}
+
+main {
+    clear: both;
+}
+
+main #banner {
+    --top_px: calc(var(--image_height) - 100px);
+    position: fixed;
+    top: var(--top_px);
+    right: 0;
+    left: var(--image_height);
+    height: calc(var(--image_height) - var(--top_px));
+    text-align: center;
+    background-color: darkgreen;
+}
+main #banner h3 {
+    padding-top: 2.5%;
+    color: whitesmoke;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+main #two-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 25px;
+    padding: 25px;
+    gap: 25px;
+}
+main #one, main #two {
+    border: solid 2px goldenrod;
+    padding: 25px;
+}
