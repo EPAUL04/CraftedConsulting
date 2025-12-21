@@ -59,6 +59,14 @@ nav ul li a:hover {
 main {
     clear: both;
 }
+main p {
+    text-indent: 2em;
+    line-height: 1.5em;
+}
+main a {
+    color: rgb(10, 92, 40);
+}
+
 
 main #banner {
     --top_px: calc(var(--image_height) - 100px);
@@ -87,6 +95,7 @@ main #two-cols {
 main #one, main #two {
     border: solid 2px goldenrod;
     padding: 25px;
+    padding-bottom: 20px;
 }
 
 
