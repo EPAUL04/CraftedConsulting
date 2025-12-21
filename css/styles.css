@@ -125,9 +125,9 @@ main #one, main #two {
     nav {
         top: 0;
     }
-    
+
     nav ul li a {
-        padding: 10px 20px 10px 20px;
+        padding: 5px 10px 5px 10px;
         font-size: small;
     }
 }
