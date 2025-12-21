@@ -11,3 +11,4 @@ TASKS:
 5. create a form on the contact page
 6. link it to her actual email so she can recieve messages
 ****************************************************
+link: https://epaul04.github.io/CraftedConsulting/
