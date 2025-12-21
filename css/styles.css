@@ -48,7 +48,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     padding: 15px 25px 15px 25px;
-    color: darkgreen;
+    color: rgb(10, 92, 40);
     border-radius: 15px;
 }
 nav ul li a:hover {
@@ -68,7 +68,7 @@ main #banner {
     left: var(--image_height);
     height: calc(var(--image_height) - var(--top_px));
     text-align: center;
-    background-color: darkgreen;
+    background-color: rgb(10, 92, 40);
 }
 main #banner h3 {
     padding-top: 2.5%;
@@ -87,4 +87,43 @@ main #two-cols {
 main #one, main #two {
     border: solid 2px goldenrod;
     padding: 25px;
+}
+
+
+/* media queries */
+@media (max-width: 800px) {
+    main #two-cols {
+        /* remove 2 col layout */
+        display: block;
+    }
+    main #one {
+        margin-bottom: 25px;
+    }
+    main #two {
+        margin-top: 25px;
+    }
+
+    nav ul li a {
+        padding: 10px 20px 10px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    #logo {
+        /* change header and nav */
+        height: calc(var(--image_height) / 2);
+    }
+    
+    #banner {
+        display: none;
+    }
+
+    #background {
+        height: calc((var(--image_height)) / 2);
+    }
+
+    nav ul li a {
+        padding: 10px 20px 10px 20px;
+        font-size: small;
+    }
 }
