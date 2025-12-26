@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Crafted Consulting</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.JPG">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img src="images/logo.JPG" alt="Crafted Consulting LLC logo" id="logo">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html style= background-color: rgb(10, 92, 40); color: white">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="background">
+            <p> </p>
+        </div>
+        
+        <main>
+            <div id="banner">
+                <h3>Get in touch!</h3>
+            </div>
+            
+            <div style="width: 80%; margin: auto; border: 2px solid goldenrod; padding: 2em; margin-top: 25px;">
+                <p style="text-indent: 0%;">
+                    Leave a message and your contact info to get in touch! Let me know what services you are interested in 
+                    and any information that you would like me to know. Your message will be sent to my email. 
+                </p>
+                <br>
+                <form action="form-to-email.php" method="post" enctype="text/plain">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" required>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" required>
+                    <label for="phone">Phone number (optional): </label>
+                    <input type="tel" name="phone">
+                    <label for="message">Message: </label>
+                    <textarea id="message" name="message" required style="display: block; margin-bottom: 1.5em;"></textarea>
+                    <input type="submit" name="submit" value="Submit" style="padding: 0.5em;">
+                </form>
+            </div>
+        </main>
+        <!-- no footer -->
+
+        <!-- JavaScript -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/additional-methods.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

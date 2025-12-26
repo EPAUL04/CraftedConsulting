@@ -110,6 +110,16 @@ main #three-fourths {
     padding: 25px;
     padding-bottom: 20px;
 }
+main form input {
+    display: block;
+    line-height: 2em;
+    margin-bottom: 1em;
+}
+main form label {
+    line-height: 2em;
+    padding: 1em;
+    margin-left: -1em;
+}
 
 
 /* media queries */
